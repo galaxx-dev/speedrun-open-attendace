@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="array">
+        <item>Array</item>
+    </array>
+
+    <array name="type">
+        <item>Masuk</item>
+        <item>Pulang</item>
+    </array>
+
+</resources>

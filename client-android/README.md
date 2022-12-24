@@ -1,1 +1,1 @@
-Ini client untuk web :)
+Ini client untuk android :)

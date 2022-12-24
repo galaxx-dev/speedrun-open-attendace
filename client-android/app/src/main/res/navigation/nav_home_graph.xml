@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.arysugiarto.attendence.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_home_fragment_to_detail_fragment"
+            app:destination="@id/detail_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.arysugiarto.attendence.ui.detail.DetailFragment"
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="date"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="content"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="image"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="desc"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="source"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+</navigation>

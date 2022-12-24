@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivPatnerNews"
+            style="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            android:layout_width="@dimen/_88sdp"
+            android:layout_height="@dimen/_88sdp"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginBottom="@dimen/screen_margin"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            app:layout_constraintBottom_toBottomOf="@id/ivPatnerNews"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivPatnerNews"
+            app:layout_constraintTop_toTopOf="@id/ivPatnerNews">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:elevation="@dimen/zero_margin"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/zero_margin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    tools:text="2 Juni 2022" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:ellipsize="end"
+                android:letterSpacing="0"
+                android:maxLines="2"
+                android:text="Ini judul berita Maksimal 2 row, ini klu row 2 row"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/source" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                tools:text="2 Juni 2022" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/screen_margin"
+        android:background="@color/silver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

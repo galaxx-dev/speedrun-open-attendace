@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainFragment">
+
+<!--    <com.google.android.material.appbar.MaterialToolbar-->
+<!--        android:id="@+id/mainToolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/red"-->
+<!--        android:elevation="@dimen/small_margin"-->
+<!--        app:titleTextAppearance="@style/ToolbarStyle"-->
+<!--        app:contentInsetStartWithNavigation="0dp"-->
+<!--        tools:title="Doku Berita"/>-->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navHostContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_bottom_nav"
+        app:itemTextAppearanceActive="@style/TextAppearance.OpenSans.SemiBold.Caption"
+        app:itemTextAppearanceInactive="@style/TextAppearance.OpenSans.SemiBold.Caption"
+        app:labelVisibilityMode="labeled"/>
+
+</LinearLayout>

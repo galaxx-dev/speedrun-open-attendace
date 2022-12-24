@@ -1,0 +1,21 @@
+<resources>
+    <string name="test">Test</string>
+
+    <!--Bottom Nav-->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_activity">Aktifitas</string>
+    <string name="nav_balance">Saldo</string>
+    <string name="nav_profile">Profil</string>
+    <string name="title">Doku Berita</string>
+    <string name="title_article">Tittle nya</string>
+    <string name="detail_title">Detail News</string>
+    <string name="nav_list">Apple News</string>
+    <string name="nav_top">Absensi</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="absensi">Absensi</string>
+    <string name="location">Location</string>
+    <string name="start_end">Masuk/Pulang</string>
+    <string name="login">Login</string>
+
+</resources>

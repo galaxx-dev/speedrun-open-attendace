@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="@string/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/boxUsername"
+        android:layout_width="@dimen/zero_margin"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/screen_margin"
+        app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+        app:boxCornerRadiusTopStart="@dimen/_8sdp"
+        app:boxStrokeColor="@drawable/bg_input_text"
+        app:boxStrokeWidth="@dimen/_1sdp"
+        app:boxStrokeWidthFocused="1dp"
+        app:endIconMode="custom"
+        app:expandedHintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        app:placeholderTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="255"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="@string/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxUsername" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/boxPassword"
+        android:layout_width="@dimen/zero_margin"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/screen_margin"
+        android:backgroundTint="@color/white"
+        app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+        app:boxCornerRadiusTopStart="@dimen/_8sdp"
+        app:boxStrokeColor="@drawable/bg_input_text"
+        app:boxStrokeWidth="@dimen/_1sdp"
+        app:boxStrokeWidthFocused="1dp"
+        app:endIconMode="password_toggle"
+        app:expandedHintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword"
+        app:placeholderTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="textPassword"
+            android:maxLength="255"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmitAbsen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:text="Kirim Absen"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,772 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Headline 1 -->
+    <style name="TextAppearance.OpenSans.Light.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Headline 2 -->
+    <style name="TextAppearance.OpenSans.Light.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Headline 3 -->
+    <style name="TextAppearance.OpenSans.Light.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Headline 4 -->
+    <style name="TextAppearance.OpenSans.Light.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Headline 5 -->
+    <style name="TextAppearance.OpenSans.Light.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Headline 6 -->
+    <style name="TextAppearance.OpenSans.Light.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Subtitle 1 -->
+    <style name="TextAppearance.OpenSans.Light.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Subtitle 2 -->
+    <style name="TextAppearance.OpenSans.Light.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Body 1 -->
+    <style name="TextAppearance.OpenSans.Light.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Body 2 -->
+    <style name="TextAppearance.OpenSans.Light.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Button -->
+    <style name="TextAppearance.OpenSans.Light.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Caption -->
+    <style name="TextAppearance.OpenSans.Light.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="lineHeight">@dimen/screen_margin</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+    <!-- Overline -->
+    <style name="TextAppearance.OpenSans.Light.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Raleway.Light.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextAppearance.Raleway.Regular.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextAppearance.Raleway.Medium.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="TextAppearance.Raleway.SemiBold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextAppearance.Raleway.Bold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/raleway_bold</item>
+    </style>
+
+</resources>

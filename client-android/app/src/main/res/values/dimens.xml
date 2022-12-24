@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="image_options_circle_radius">200dp</dimen>
+    <dimen name="image_options_round_radius">4dp</dimen>
+
+    <dimen name="default_button_inset">0dp</dimen>
+    <dimen name="medium_button_inset">3dp</dimen>
+    <dimen name="normal_button_inset">4dp</dimen>
+
+    <dimen name="small_divider">0.5dp</dimen>
+    <dimen name="normal_divider">0.75dp</dimen>
+    <dimen name="medium_divider">1dp</dimen>
+
+    <!--Stroke-->
+    <dimen name="focused_input_layout_stroke_width">1.5dp</dimen>
+    <dimen name="input_layout_stroke_width">1dp</dimen>
+
+    <!--Margin-->
+    <dimen name="zero_margin">0dp</dimen>
+    <dimen name="extra_small_margin">2dp</dimen>
+    <dimen name="even_margin">3dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="medium_margin">12dp</dimen>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="semi_huge_margin">32dp</dimen>
+    <dimen name="huge_margin">48dp</dimen>
+    <dimen name="extra_huge_margin">64dp</dimen>
+    <dimen name="extra_more_huge_margin">84dp</dimen>
+    <dimen name="view_height">1dp</dimen>
+
+    <dimen name="semi_normal_shape_radius">6dp</dimen>
+    <dimen name="semi_large_margin">20dp</dimen>
+    <dimen name="semi_extra_huge_margin">56dp</dimen>
+
+    <dimen name="request_option_circle_radius">200dp</dimen>
+
+</resources>
