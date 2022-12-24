@@ -19,9 +19,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
-Route::get("/tes", function () {
-    return response()->json(["tes" => "tes cok"]);
+Route::middleware("auth:api")->group(function () {
+    Route::get(
+        "/tes",
+        function () {
+            return response()->json(["tes" => "tes cok"]);
+        }
+    );
 });
 
 
@@ -30,4 +34,5 @@ Route::controller(AuthController::class)
     ->prefix("/auth")
     ->group(function () {
         Route::post("/", "authenticate")->name("authenticate");
+        Route::post("/logout", "logout")->name("logout");
     });

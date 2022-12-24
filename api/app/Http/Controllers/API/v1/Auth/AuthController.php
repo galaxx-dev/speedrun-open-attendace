@@ -7,6 +7,7 @@ use App\Http\Requests\Auth\AuthenticationRequest;
 use App\Services\AuthenticationService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -18,5 +19,21 @@ class AuthController extends Controller
             return response()->json($authenticated, JsonResponse::HTTP_UNAUTHORIZED);
         }
         return response()->json($authenticated, JsonResponse::HTTP_OK);
+    }
+
+    public function logout()
+    {
+        $tes = Auth::logout();
+        return response()->json([
+            'status'      => 'success',
+            'status_code' => JsonResponse::HTTP_OK,
+            'message'     => 'Successfully logged out',
+            'tes'         => $tes
+        ]);
+    }
+
+
+    public function registration(AuthenticationService $service)
+    {
     }
 }
