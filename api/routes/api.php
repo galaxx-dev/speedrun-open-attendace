@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\v1\Auth\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get("/tes", function () {
     return response()->json(["tes" => "tes cok"]);
 });
+
+
+Route::controller(AuthController::class)
+    ->name("auth.")
+    ->prefix("/auth")
+    ->group(function () {
+        Route::post("/", "authenticate")->name("authenticate");
+    });

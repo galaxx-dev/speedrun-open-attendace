@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 
-class Account extends Model implements JWTSubject
+class Account extends Authenticatable implements JWTSubject
 {
     use HasFactory, SoftDeletes;
 
@@ -15,6 +15,11 @@ class Account extends Model implements JWTSubject
     protected $hidden = [
         'password',
     ];
+
+    public function employee()
+    {
+        return $this->belongsTo(Employee::class);
+    }
 
     public function getJWTIdentifier()
     {
