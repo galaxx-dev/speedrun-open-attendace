@@ -35,4 +35,8 @@ Route::controller(AuthController::class)
     ->group(function () {
         Route::post("/", "authenticate")->name("authenticate");
         Route::post("/logout", "logout")->name("logout");
+        Route::post("/registration", "registration")->name("registration");
     });
+
+
+// Route::controller()

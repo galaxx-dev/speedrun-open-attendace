@@ -8,7 +8,9 @@ class AuthenticationService
 {
     public function authenticate(array $requestedData): array
     {
+        $requestedData["is_active"] = true;
         $token = Auth::attempt($requestedData);
+
 
         if (!$token) {
             return [

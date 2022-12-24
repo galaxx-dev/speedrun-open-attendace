@@ -14,7 +14,7 @@ return new class extends Migration {
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("employee_id");
+            $table->string("employee_id");
             $table->string("password", 512);
             $table->boolean("is_active")->default(1);
             $table->softDeletes();

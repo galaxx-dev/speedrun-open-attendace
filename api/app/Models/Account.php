@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Hash;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 
 class Account extends Authenticatable implements JWTSubject
@@ -15,6 +17,14 @@ class Account extends Authenticatable implements JWTSubject
     protected $hidden = [
         'password',
     ];
+
+
+    public function password(): Attribute
+    {
+        return Attribute::make(
+        set: fn($value) => Hash::make($value),
+        );
+    }
 
     public function employee()
     {
@@ -28,6 +38,13 @@ class Account extends Authenticatable implements JWTSubject
 
     public function getJWTCustomClaims()
     {
-        return [];
+        return [
+            "user" => [
+                'employee_id' => $this->employee_id,
+                'is_active'   => $this->is_active,
+                'email'       => $this->employee->email,
+            ]
+        ];
+
     }
 }

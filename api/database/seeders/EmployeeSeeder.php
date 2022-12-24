@@ -18,7 +18,7 @@ class EmployeeSeeder extends Seeder
         $data = [
             [
                 "id"       => "10117124",
-                "fullname" => "Iqbal Atma",
+                "fullname" => "Iqbal Atma xxx",
                 "email"    => "iqbalatma@gmail.com",
                 "phone"    => "0895351172040",
                 "address"  => "Selakau",
