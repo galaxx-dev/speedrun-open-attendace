@@ -11,6 +11,7 @@ object Const {
         const val EQUALS = "="
 
         const val Survey = "api/v1/survey"
+        const val Login = "api/auth"
 
         object Media {
             const val UPLOAD = PREFIX_GENERAL + "file"

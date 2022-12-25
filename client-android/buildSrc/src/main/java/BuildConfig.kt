@@ -35,7 +35,7 @@ object BuildType {
         const val suffixName = "-dev"
 
         const val baseUrlName = "BASE_URL"
-        const val baseUrl = "\"https://newsapi.org\""
+        const val baseUrl = "\"https://open-attendance.atma-dev.com/\""
 
 
         const val resBaseUrlName = "res_base_url"

@@ -6,11 +6,15 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.arysugiarto.attendence.R
+import com.arysugiarto.attendence.viewmodel.AuthViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SplashScreenFragment: Fragment(R.layout.fragment_splashscreen) {
+
+    private val viewModel by viewModels<AuthViewModel>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -42,6 +46,12 @@ class SplashScreenFragment: Fragment(R.layout.fragment_splashscreen) {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
+    }
+
+    private suspend fun initSessionId(
+        hadToInsertSessionId: Boolean
+    ) {
+        if (hadToInsertSessionId) viewModel.setSessionId()
     }
 
     override fun onDestroy() {

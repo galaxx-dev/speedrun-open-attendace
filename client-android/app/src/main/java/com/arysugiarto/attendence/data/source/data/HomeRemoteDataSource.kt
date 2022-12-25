@@ -10,6 +10,16 @@ import kotlinx.coroutines.flow.Flow
 class HomeRemoteDataSource(callback: ApiCallback) {
     private val apiCallback = callback
 
+    fun requestLogin(employeId: String, password: String, sessionId: String) =
+        flowResponse {
+            val body = gson.toJsonElement {
+                put("employee_id", employeId)
+                put("password", password)
+                put("session_id", sessionId)
+            }
+
+            apiCallback.requestLogin(body)
+        }
 
 
     fun handleSendAbsen(surveySend: SurveySend) = flowResponse {

@@ -1,5 +1,6 @@
 package com.arysugiarto.attendence.data.remote.api
 
+import com.arysugiarto.attendence.data.remote.model.LoginResponse
 import com.arysugiarto.attendence.data.remote.model.SurveySend
 import com.arysugiarto.attendence.util.Const
 import com.google.gson.JsonElement
@@ -14,8 +15,8 @@ interface ApiCallback {
         @Body body: JsonElement
     ): Response<SurveySend>
 
-    @POST(Const.NETWORK.Survey)
+    @POST(Const.NETWORK.Login)
     suspend fun requestLogin(
         @Body jsonElement: JsonElement
-    ): Response<SurveySend>
+    ): Response<LoginResponse>
 }

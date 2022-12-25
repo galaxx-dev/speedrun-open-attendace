@@ -1,5 +1,6 @@
 package com.arysugiarto.attendence.util
 
+import android.widget.Button
 import com.google.gson.Gson
 import com.google.gson.JsonElement
 import com.google.gson.reflect.TypeToken
@@ -13,6 +14,9 @@ import java.io.IOException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 import com.arysugiarto.attendence.data.remote.Result
+import com.arysugiarto.attendence.util.animatedtext.ProgressParams
+import com.arysugiarto.attendence.util.animatedtext.hideProgress
+import com.arysugiarto.attendence.util.animatedtext.showProgress
 
 /**
  * Return [Gson] Constructor
@@ -71,6 +75,19 @@ fun Int.handleCode() = when (this) {
     404 -> "Halaman tidak ditemukan"
     422 -> "Query tidak ditemukan"
     else -> "Mohon maaf terjadi kesalahan, tunggu beberapa saat untuk mencoba kembali"
+}
+
+fun <T> Result<T>.attachLoadingButton(
+    button: Button,
+    endLoadingText: String,
+    params: ProgressParams.() -> Unit
+) {
+    button.isEnabled = this !is Result.Loading
+
+    when(this) {
+        is Result.Loading -> button.showProgress(params)
+        else -> button.hideProgress(endLoadingText)
+    }
 }
 
 // Exception Handler

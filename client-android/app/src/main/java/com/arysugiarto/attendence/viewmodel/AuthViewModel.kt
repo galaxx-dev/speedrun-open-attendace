@@ -15,14 +15,11 @@ import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(
+class AuthViewModel @Inject constructor(
     application: Application,
     homeRepository: HomeRepository
 ) : BaseViewModel(application) {
     private val repository = homeRepository
-
-    private var _send: MutableLiveData<com.arysugiarto.attendence.data.remote.Result<SurveySend>> = MutableLiveData()
-    val send: LiveData<com.arysugiarto.attendence.data.remote.Result<SurveySend>> get() = _send
 
     private var _token: MutableLiveData<String> = MutableLiveData()
     val token: LiveData<String> get() = _token
@@ -36,10 +33,10 @@ class HomeViewModel @Inject constructor(
     }.launchIn(viewModelScope)
 
     fun requestLogin(
-        email: String,
+        employeid: String,
         password: String,
         sessionId: String
-    ) = repository.requestLogin(email, password, sessionId)
+    ) = repository.requestLogin(employeid, password, sessionId)
         .onEach { result ->
             _login.value = result
 
@@ -57,11 +54,6 @@ class HomeViewModel @Inject constructor(
         }
     }
 
-
-    fun requestSendAbsen(surveySend: SurveySend) =
-        repository.submitAbsen (surveySend).onEach { result ->
-            _send.value = result
-        }.launchIn(viewModelScope)
 
 
 }

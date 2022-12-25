@@ -13,4 +13,8 @@ class HomeRepository(
     override fun submitAbsen(surveySend: SurveySend): Flow<com.arysugiarto.attendence.data.remote.Result<SurveySend>> =
         remoteDataSource.handleSendAbsen(surveySend)
 
+
+    override fun requestLogin(employeId: String, password: String, sessionId: String) =
+        remoteDataSource.requestLogin(employeId, password, sessionId)
+
 }
