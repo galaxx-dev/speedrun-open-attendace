@@ -47,4 +47,22 @@ class EmployeeController extends Controller
             "message"     => "Update employee failed. Something went wrong"
         ]);
     }
+
+    public function destroy(EmployeeService $service, string $id)
+    {
+        $deleted = $service->deleteDataById($id);
+
+        if ($deleted) {
+            return response()->json([
+                "status"      => "success",
+                "status_code" => JsonResponse::HTTP_OK,
+                "message"     => "Delete employee by id successfully"
+            ]);
+        }
+        return response()->json([
+            "status"      => "error",
+            "status_code" => JsonResponse::HTTP_NOT_ACCEPTABLE,
+            "message"     => "Delete employee by id failed"
+        ]);
+    }
 }

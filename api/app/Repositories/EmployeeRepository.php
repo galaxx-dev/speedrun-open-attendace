@@ -34,6 +34,11 @@ class EmployeeRepository
     {
         return $this->model->where("id", $id)->update($requestedData);
     }
+
+    public function deleteDataById(string $id): int
+    {
+        return $this->model->where("id", $id)->delete();
+    }
 }
 
 ?>

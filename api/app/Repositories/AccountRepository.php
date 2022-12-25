@@ -17,6 +17,10 @@ class AccountRepository
     {
         return $this->model->create($requestedData);
     }
-}
 
+    public function suspendAccountById(string $id): int
+    {
+        return $this->model->where("employee_id", $id)->update(["is_active" => 0]);
+    }
+}
 ?>
