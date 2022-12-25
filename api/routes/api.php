@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\v1\Auth\AuthController;
+use App\Http\Controllers\API\v1\EmployeeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -39,4 +40,11 @@ Route::controller(AuthController::class)
     });
 
 
-// Route::controller()
+Route::controller(EmployeeController::class)
+    ->name("employees.")
+    ->prefix("/employees")
+    ->group(function () {
+        Route::get("/", "index")->name("index");
+        Route::get("/{id}", "show")->name("show");
+        Route::put("/{id}", "update")->name("update");
+    });
