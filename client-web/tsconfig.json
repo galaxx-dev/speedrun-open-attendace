@@ -19,6 +19,7 @@
     "baseUrl": ".",
     "paths": {
       "~components/*": ["src/components/*"],
+      "~config/*": ["src/config/*"],
       "~data-access/*": ["src/data-access/*"],
       "~data-mapper/*": ["src/data-mapper/*"],
       "~services/*": ["src/services/*"],

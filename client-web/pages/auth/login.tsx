@@ -13,7 +13,7 @@ import TextField from '@atlaskit/textfield'
 import { useAtom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 import { useRouter } from 'next/router'
-import { LoginResponse } from '~data-access/api'
+import { LoginResp } from '~data-access/api'
 import service from '~services/index'
 
 export interface FormProps {
@@ -24,7 +24,7 @@ export interface FormProps {
 
 interface Props {}
 
-const loggedInUserAtom = atomWithStorage<LoginResponse['user'] | null>('user', null)
+const loggedInUserAtom = atomWithStorage<LoginResp['user'] | null>('user', null)
 const loggedInAccessTokenAtom = atomWithStorage<string | null>('accessToken', '')
 
 export default function PageAuthLogin(_: Props) {

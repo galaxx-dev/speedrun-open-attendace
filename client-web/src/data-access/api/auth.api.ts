@@ -1,8 +1,9 @@
-import BaseAPI, { APIResponse, APIResponseReturn } from './_base'
+import type { APIRespOne, APIRespOneReturn } from './base'
+import BaseAPI from './base'
 
 type Gender = 'male' | 'female'
 
-export interface LoginResponse {
+export interface LoginResp {
   user: {
     id: number
     employee_id: string
@@ -32,16 +33,10 @@ export interface LoginBody {
   remember_me: boolean
 }
 
-type LoginReturn = APIResponseReturn<LoginResponse>
-
 class AuthApi extends BaseAPI {
-  constructor() {
-    super()
-  }
-
-  public async login(body: LoginBody): Promise<LoginReturn> {
+  public async login(body: LoginBody): Promise<APIRespOneReturn<LoginResp>> {
     try {
-      const { data } = await this._fetch.post<APIResponse<LoginResponse>>('/auth', body)
+      const { data } = await this.fetch.post<APIRespOne<LoginResp>>('/auth', body)
 
       if (data.status === 'error') {
         return {
