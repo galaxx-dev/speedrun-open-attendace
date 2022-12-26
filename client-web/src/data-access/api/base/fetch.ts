@@ -1,9 +1,9 @@
 import axios from 'axios'
-import { BASE_URL } from './baseApi'
+import CONSTS from '~config/consts'
 
 /**
  * @version v1.1.0
  */
-const fetch = axios.create({ baseURL: BASE_URL })
+const fetch = axios.create({ baseURL: CONSTS.URL.BASE_API })
 
 export default fetch

@@ -1,18 +1,18 @@
 import axios from 'axios'
-import { BASE_URL, BASE_URL_ORIGIN } from './baseApi'
+import CONSTS from '~config/consts'
 
 /**
  * @version v1.1.0
  */
 const fetchWithCred = axios.create({
-  baseURL: BASE_URL,
+  baseURL: CONSTS.URL.BASE_API,
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true,
 })
 
 fetchWithCred.interceptors.request.use(
   config => {
-    const allowedOrigins = [BASE_URL_ORIGIN as string]
+    const allowedOrigins = [CONSTS.URL.BASE_API_ORIGIN as string]
     const { origin } = new URL(config.url || '')
 
     if (config.headers && allowedOrigins.includes(origin)) {
