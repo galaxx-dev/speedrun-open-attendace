@@ -12,7 +12,7 @@ interface Props {}
  */
 export default function IndexDashboardPage(props: Props) {
   return (
-    <LayoutDashboard>
+    <LayoutDashboard siteTitle="main dashboard">
       <div>
         <span>qwdqwd</span>
         <span>brtjnoi</span>
