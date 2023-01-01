@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,6 +15,14 @@ export default function Home() {
       </Head>
 
       <h1 className="text-3xl bg-indigo-300 font-bold underline">Open Attendance!</h1>
+
+      <h3>
+        Go to Login page: <Link href="/auth/login">Fly me!</Link>
+      </h3>
+
+      <h3>
+        Go to Dashboard: <Link href="/dashboard">Fly me!</Link>
+      </h3>
     </>
   )
 }
