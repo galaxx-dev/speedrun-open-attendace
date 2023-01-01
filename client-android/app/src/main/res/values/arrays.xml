@@ -11,8 +11,8 @@
     </array>
 
     <string-array name="gender_choose">
-        <item>Laki-laki</item>
-        <item>Perempuan</item>
+        <item>male</item>
+        <item>female</item>
     </string-array>
 
 </resources>

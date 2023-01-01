@@ -4,7 +4,6 @@ import okhttp3.MediaType.Companion.toMediaTypeOrNull
 
 object Const {
 
-
     object NETWORK {
         const val PREFIX_GENERAL = "v1/general/"
         const val SESSION_ID = "session_id"
@@ -14,6 +13,8 @@ object Const {
         const val Registration = "$PREFIX/auth/registration"
         const val Login = "$PREFIX/auth"
         const val Employee = "$PREFIX/employees"
+        const val Edit = "$PREFIX/employees/{param}"
+        const val Delete = "$PREFIX/employees/{param}"
 
         object Media {
             const val UPLOAD = PREFIX_GENERAL + "file"
@@ -51,14 +52,6 @@ object Const {
             const val notPending = 0
         }
 
-        object Type {
-            const val IMAGE = "image"
-        }
-
-        object Variant {
-            const val ORIGINAL = "original"
-            const val THUMBNAIL = "thumbnail"
-        }
     }
 
     object Paging {

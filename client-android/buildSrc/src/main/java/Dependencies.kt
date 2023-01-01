@@ -43,6 +43,8 @@ object Version {
     const val timberVersion = "4.7.1"
 
     const val intuitVersion = "1.0.6"
+
+    const val sweetAlert = "1.5.6"
 }
 
 object Dependencies {
@@ -66,9 +68,9 @@ object Dependencies {
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Version.constraintVersion}"
         const val intuitSdp = "com.intuit.sdp:sdp-android:${Version.intuitVersion}"
         const val intuitSsp = "com.intuit.ssp:ssp-android:${Version.intuitVersion}"
-
+        const val sweetAlert = "com.github.f0ris.sweetalert:library:${Version.sweetAlert}"
         val uiDependencies = mutableListOf(
-            activityKtx, fragmentKtx, appCompat, materialDesign, constraintLayout, intuitSdp, intuitSsp,
+            activityKtx, fragmentKtx, appCompat, materialDesign, constraintLayout, intuitSdp, intuitSsp,sweetAlert
         )
     }
 

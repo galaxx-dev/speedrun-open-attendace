@@ -315,7 +315,7 @@
                 app:layout_constraintTop_toBottomOf="@id/tvGender" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnEdit"
                 android:layout_width="@dimen/zero_margin"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/screen_margin"

@@ -16,8 +16,11 @@ object HomeAdapter {
 
                         tvNameEmploye.textOrNull = item.fullname
 
-                        clItem.setOnClickListener {
+                        ivEdit.setOnClickListener {
                             SetOnClickItem.onClickListener.invoke(item)
+                        }
+                        ivDelete.setOnClickListener {
+                            SetDeleteOnClickItem.onDeleteClickListener.invoke(item)
                         }
 
                     }
@@ -34,6 +37,14 @@ object HomeAdapter {
 
         fun setOnClickItemListener(listener: (EmployeResponse.Payload) -> Unit) {
             onClickListener = listener
+        }
+
+    }
+    object SetDeleteOnClickItem {
+        var onDeleteClickListener: (EmployeResponse.Payload) -> Unit = { _ -> }
+
+        fun setOnClickDeleteItemListener(listener: (EmployeResponse.Payload) -> Unit) {
+            onDeleteClickListener = listener
         }
 
     }

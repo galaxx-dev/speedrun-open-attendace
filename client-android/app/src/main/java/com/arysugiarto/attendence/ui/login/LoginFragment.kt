@@ -40,7 +40,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private fun initViewModel() {
         viewModel.requestLogin(
-            binding.etUsername.text.toString(),
+            binding.etEmployeeId.text.toString(),
             binding.etPassword.text.toString(),
 //            "10117124",
 //            "admin",
@@ -69,6 +69,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             when (result) {
                 is Result.Loading -> {}
                 is Result.Success -> {
+                    context?.toast("Berhasil Login")
                     clearUserInput()
                 }
                 is Result.Error -> {

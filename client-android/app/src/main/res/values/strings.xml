@@ -37,5 +37,9 @@
     <string name="have_account">Sudah punya akun</string>
     <string name="not_have_account">Sudah puny akun</string>
     <string name="update">Ubah</string>
+    <string name="delete_employee">Delete Karyawan</string>
+    <string name="delete_employee_sure">Anda yakin ingin menghapus karyawan?</string>
+    <string name="success">Berhasil</string>
+    <string name="edit_employee">Berhasil edit karyawan</string>
 
 </resources>

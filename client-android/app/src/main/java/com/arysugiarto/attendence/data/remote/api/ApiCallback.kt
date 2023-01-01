@@ -1,15 +1,10 @@
 package com.arysugiarto.attendence.data.remote.api
 
-import com.arysugiarto.attendence.data.remote.model.EmployeResponse
-import com.arysugiarto.attendence.data.remote.model.LoginResponse
-import com.arysugiarto.attendence.data.remote.model.RegisterModel
-import com.arysugiarto.attendence.data.remote.model.SurveySend
+import com.arysugiarto.attendence.data.remote.model.*
 import com.arysugiarto.attendence.util.Const
 import com.google.gson.JsonElement
 import retrofit2.Response
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface ApiCallback {
 
@@ -26,4 +21,20 @@ interface ApiCallback {
     @GET(Const.NETWORK.Employee)
     suspend fun requestEmployee(
     ): Response<EmployeResponse>
+
+    @PUT(Const.NETWORK.Edit)
+    suspend fun update(
+        @Body body: JsonElement,
+        @Path("param") idEmploye: String
+    ): Response<UpdateModel>
+
+    @HTTP(
+        method = "DELETE",
+        path = Const.NETWORK.Delete,
+        hasBody = true
+    )
+    suspend fun delete(
+        @Path("param") idEmploye: String,
+    ): Response<Any>
+
 }

@@ -6,10 +6,12 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
+import cn.pedant.SweetAlert.SweetAlertDialog
 import com.arysugiarto.attendence.R
 import com.arysugiarto.attendence.data.remote.Result
 import com.arysugiarto.attendence.databinding.FragmentHomeBinding
 import com.arysugiarto.attendence.ui.home.adapter.HomeAdapter
+import com.arysugiarto.attendence.ui.main.MainFragment.Companion.parentNavigation
 import com.arysugiarto.attendence.util.*
 import com.arysugiarto.attendence.viewmodel.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -32,6 +34,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         initTypeAbsen()
         initViewModelCallback()
 
+
     }
 
     private fun initViewModel() {
@@ -40,6 +43,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private fun initViewModelCallback() {
         initEmployeeCallback()
+        initDeleteEmployeeCallback()
     }
 
     private fun initCallback() {
@@ -62,6 +66,25 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 }
             }
             binding.rvNews.adapter = employeeAdapter
+
+        }
+
+
+    private fun initDeleteEmployeeCallback() =
+        viewModels.delete.observe(viewLifecycleOwner) { result ->
+            when (result) {
+                is Result.Loading -> {
+
+                }
+                is Result.Success -> {
+                  Timber.e("Sukses Cuy")
+                }
+                is Result.Error<*> -> {
+
+                }
+                else -> {
+                }
+            }
 
         }
 
@@ -99,9 +122,25 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                     item.fullname,
                     item.email,
                     item.phone,
-                    item.gender
+                    item.gender,
+                    item.address
                 )
             )
+        }
+        HomeAdapter.SetDeleteOnClickItem.setOnClickDeleteItemListener { item ->
+
+            SweetAlertDialog(requireContext(), SweetAlertDialog.BUTTON_CONFIRM)
+                .setTitleText(context?.getString(R.string.delete_employee))
+                .setContentText(context?.getString(R.string.delete_employee_sure))
+                .setConfirmClickListener {
+                    viewModels.requestDelete(item.id)
+                    viewModels.requestEmployee()
+                    it.dismissWithAnimation()
+                }
+                .setCancelClickListener {
+                    it.dismissWithAnimation()
+                }
+                .show()
         }
     }
 

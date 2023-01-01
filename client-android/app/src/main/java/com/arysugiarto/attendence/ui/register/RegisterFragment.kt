@@ -38,7 +38,6 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
         initOnClick()
         initViewModelCallback()
-        initOnClick()
         initSpinnerGender()
 
     }
@@ -114,7 +113,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
                     )
 
-//                    viewModel.requestRegister(registerModel)
+                    viewModel.requestRegister(registerModel)
                     Timber.e(registerModel.toString())
                 }
 

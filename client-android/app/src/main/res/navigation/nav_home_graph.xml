@@ -47,6 +47,12 @@
             app:nullable="true" />
 
         <argument
+            android:name="address"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
             android:name="gender"
             android:defaultValue="@null"
             app:argType="string"
