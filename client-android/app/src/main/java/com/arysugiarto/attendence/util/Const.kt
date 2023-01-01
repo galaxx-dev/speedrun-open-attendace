@@ -9,9 +9,11 @@ object Const {
         const val PREFIX_GENERAL = "v1/general/"
         const val SESSION_ID = "session_id"
         const val EQUALS = "="
+        const val PREFIX = "api"
 
-        const val Survey = "api/v1/survey"
-        const val Login = "api/auth"
+        const val Registration = "$PREFIX/auth/registration"
+        const val Login = "$PREFIX/auth"
+        const val Employee = "$PREFIX/employees"
 
         object Media {
             const val UPLOAD = PREFIX_GENERAL + "file"

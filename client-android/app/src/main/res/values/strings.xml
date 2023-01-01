@@ -18,5 +18,24 @@
     <string name="login_username_hint">Masukkan Id karyawan Anda</string>
     <string name="login_password_hint">Masukkan Password Anda</string>
     <string name="login_login">Login</string>
+    <string name="login_forgot_password">Forgot Password</string>
+    <string name="welcome_register_title">Belum punya akun</string>
+    <string name="welcome_register">Register</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_name_app">Open Attendence</string>
+    <string name="employe_id">Employee Id</string>
+    <string name="nama">Masukan Nama karyawan</string>
+    <string name="email">Email</string>
+    <string name="register_name_hint">Masukan nama karyawan</string>
+    <string name="register">Daftar</string>
+    <string name="phone">Telephone</string>
+    <string name="phone_hint">Masukan nomer telepon</string>
+    <string name="address">Alamat</string>
+    <string name="address_hint">Alamat</string>
+    <string name="welcome_login">Login</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="have_account">Sudah punya akun</string>
+    <string name="not_have_account">Sudah puny akun</string>
+    <string name="update">Ubah</string>
 
 </resources>

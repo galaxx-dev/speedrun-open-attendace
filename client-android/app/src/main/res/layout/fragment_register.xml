@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/anakiwa">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:src="@drawable/group"
+                android:visibility="gone"
+                app:layout_constraintDimensionRatio="2:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/screen_margin"
+                android:text="@string/register"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Headline5"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/welcome_name_app"
+                android:textAppearance="@style/TextAppearance.Poppins.Bold.Headline5"
+                android:textColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/semi_huge_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/register"
+                android:visibility="gone"
+                android:textAppearance="@style/TextAppearance.Poppins.Bold.Subtitle1"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvEmployeeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/employe_id"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLogin" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/boxEmployeId"
+                style="@style/TextInputLayout.Login.Form.Outlined.Dense"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxStrokeColor="@drawable/bg_input_text"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:boxStrokeWidthFocused="1dp"
+                app:expandedHintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEmployeeId"
+                app:placeholderText="@string/login_username_hint"
+                app:placeholderTextAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                app:placeholderTextColor="@color/dove_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmployeeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="255"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                    android:textColor="@color/dove_gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvNameEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/nama"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxEmployeId" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/boxNameEmployee"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxStrokeColor="@drawable/bg_input_text"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:boxStrokeWidthFocused="1dp"
+                app:expandedHintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNameEmployee"
+                app:placeholderText="@string/register_name_hint"
+                app:placeholderTextAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                app:placeholderTextColor="@color/dove_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNameEmployee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="255"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                    android:textColor="@color/dove_gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/email"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxNameEmployee" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/boxEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxStrokeColor="@drawable/bg_input_text"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:boxStrokeWidthFocused="1dp"
+                app:expandedHintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail"
+                app:placeholderText="@string/login_password_hint"
+                app:placeholderTextAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                app:placeholderTextColor="@color/dove_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="255"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                    android:textColor="@color/dove_gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/phone"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxEmail" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/boxPhone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxStrokeColor="@drawable/bg_input_text"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:boxStrokeWidthFocused="1dp"
+                app:expandedHintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPhone"
+                app:placeholderText="@string/phone_hint"
+                app:placeholderTextAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                app:placeholderTextColor="@color/dove_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="255"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                    android:textColor="@color/dove_gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/address"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxPhone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/boxAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxStrokeColor="@drawable/bg_input_text"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:boxStrokeWidthFocused="1dp"
+                app:expandedHintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddress"
+                app:placeholderText="@string/address_hint"
+                app:placeholderTextAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                app:placeholderTextColor="@color/dove_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="255"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                    android:textColor="@color/dove_gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/gender"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxAddress" />
+
+            <Spinner
+                android:id="@+id/sGender"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:dropDownVerticalOffset="@dimen/_40sdp"
+                android:padding="@dimen/medium_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvGender" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:text="@string/password"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sGender" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/boxPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxStrokeColor="@drawable/bg_input_text"
+                app:endIconMode="password_toggle"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:boxStrokeWidthFocused="1dp"
+                app:expandedHintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPassword"
+                app:placeholderText="@string/login_password_hint"
+                app:placeholderTextAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                app:placeholderTextColor="@color/dove_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="255"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                    android:textColor="@color/dove_gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                android:layout_width="@dimen/zero_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:insetTop="@dimen/zero_margin"
+                android:insetBottom="@dimen/zero_margin"
+                android:text="@string/register"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/boxPassword" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvRegisterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_margin"
+                android:gravity="center"
+                android:text="@string/not_have_account"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/tvRegister"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/tvRegister"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginTop="@dimen/screen_margin"
+                android:gravity="center"
+                android:text="@string/welcome_login"
+                android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
+                android:textColor="@color/mariner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvRegisterTitle"
+                app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

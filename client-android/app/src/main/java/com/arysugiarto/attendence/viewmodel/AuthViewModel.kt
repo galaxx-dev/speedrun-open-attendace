@@ -5,7 +5,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.arysugiarto.attendence.base.BaseViewModel
+import com.arysugiarto.attendence.data.remote.Result
 import com.arysugiarto.attendence.data.remote.model.LoginResponse
+import com.arysugiarto.attendence.data.remote.model.RegisterModel
 import com.arysugiarto.attendence.data.remote.model.SurveySend
 import com.arysugiarto.attendence.data.repositories.HomeRepository
 import com.arysugiarto.attendence.util.getRandomCharacters
@@ -20,6 +22,9 @@ class AuthViewModel @Inject constructor(
     homeRepository: HomeRepository
 ) : BaseViewModel(application) {
     private val repository = homeRepository
+
+    private var _register: MutableLiveData<Result<RegisterModel>> = MutableLiveData()
+    val register: LiveData<Result<RegisterModel>> get() = _register
 
     private var _token: MutableLiveData<String> = MutableLiveData()
     val token: LiveData<String> get() = _token
@@ -40,7 +45,7 @@ class AuthViewModel @Inject constructor(
         .onEach { result ->
             _login.value = result
 
-            if (result is com.arysugiarto.attendence.data.remote.Result.Success) {
+            if (result is Result.Success) {
                 val token = result.data?.payload?.token.orEmpty()
 
                 accessManager.setAccess(token)
@@ -53,6 +58,13 @@ class AuthViewModel @Inject constructor(
             accessManager.setSessionId(sessionId)
         }
     }
+
+
+    fun requestRegister(registerModel: RegisterModel) =
+        repository.register (registerModel).onEach { result ->
+            _register.value = result
+        }.launchIn(viewModelScope)
+
 
 
 

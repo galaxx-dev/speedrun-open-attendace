@@ -11,48 +11,43 @@
         android:label="@string/nav_home"
         tools:layout="@layout/fragment_home" >
 
-        <action
-            android:id="@+id/action_home_fragment_to_detail_fragment"
-            app:destination="@id/detail_fragment" />
 
+        <action
+            android:id="@+id/action_home_fragment_to_edit_fragment"
+            app:destination="@id/edit_fragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/detail_fragment"
-        android:name="com.arysugiarto.attendence.ui.detail.DetailFragment"
-        tools:layout="@layout/fragment_details">
+        android:id="@+id/edit_fragment"
+        android:name="com.arysugiarto.attendence.ui.edit.UpdateFragment"
+        tools:layout="@layout/fragment_edit">
 
         <argument
-            android:name="title"
-            android:defaultValue="@null"
-            app:argType="string"
-            app:nullable="true" />
-        <argument
-            android:name="date"
+            android:name="id"
             android:defaultValue="@null"
             app:argType="string"
             app:nullable="true" />
 
         <argument
-            android:name="content"
+            android:name="name"
             android:defaultValue="@null"
             app:argType="string"
             app:nullable="true" />
 
         <argument
-            android:name="image"
+            android:name="email"
             android:defaultValue="@null"
             app:argType="string"
             app:nullable="true" />
 
         <argument
-            android:name="desc"
+            android:name="phone"
             android:defaultValue="@null"
             app:argType="string"
             app:nullable="true" />
 
         <argument
-            android:name="source"
+            android:name="gender"
             android:defaultValue="@null"
             app:argType="string"
             app:nullable="true" />

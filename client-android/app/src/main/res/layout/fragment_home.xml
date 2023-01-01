@@ -9,25 +9,33 @@
         android:id="@+id/clAbsensi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/red"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/absensi"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="@dimen/screen_margin"
             android:layout_marginBottom="@dimen/screen_margin"
+            android:text="@string/absensi"
+            android:textColor="@color/white"
             android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clAbsensi"
+        app:layout_constraintEnd_toEndOf="parent">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvLocation"
@@ -36,8 +44,8 @@
         android:layout_marginStart="@dimen/screen_margin"
         android:layout_marginTop="@dimen/large_margin"
         android:text="@string/location"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clAbsensi" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/boxUsername"
@@ -47,10 +55,10 @@
         android:layout_marginTop="@dimen/normal_margin"
         android:layout_marginEnd="@dimen/screen_margin"
         android:layout_marginBottom="@dimen/screen_margin"
+        app:background="@drawable/bg_input_text"
         app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
         app:boxCornerRadiusBottomStart="@dimen/_8sdp"
         app:boxCornerRadiusTopEnd="@dimen/_8sdp"
-        app:background="@drawable/bg_input_text"
         app:boxCornerRadiusTopStart="@dimen/_8sdp"
         app:boxStrokeColor="@drawable/bg_input_text"
         app:boxStrokeWidth="@dimen/_1sdp"
@@ -108,6 +116,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sType" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clAbsensi">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

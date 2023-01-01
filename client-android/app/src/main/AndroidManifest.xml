@@ -9,10 +9,10 @@
     <application
         android:name="com.arysugiarto.attendence.App"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/group"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/xml_network_security_config"
-        android:roundIcon="@drawable/ic_launcher_foreground"
+        android:roundIcon="@drawable/group"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity

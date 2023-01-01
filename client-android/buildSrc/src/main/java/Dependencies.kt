@@ -14,7 +14,7 @@ object Version {
     const val coreKtxVersion = "1.3.2"
     const val playCoreKtxVersion = "1.8.1"
     const val appCompatVersion = "1.2.0"
-    const val materialDesignVersion = "1.3.0-beta01"
+    const val materialDesignVersion = "1.6.0"
     const val constraintVersion = "2.0.4"
 
     const val jUnitVersion = "4.13.1"

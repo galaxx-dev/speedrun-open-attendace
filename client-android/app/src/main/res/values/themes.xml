@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/red</item>
-        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -26,6 +26,14 @@
     <style name="TextAppearance.OpenSans.Regular.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="android:letterSpacing">0</item>
@@ -56,20 +64,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Headline 2 -->
@@ -84,6 +131,14 @@
     <style name="TextAppearance.OpenSans.Regular.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
         <item name="android:letterSpacing">0</item>
@@ -114,20 +169,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Headline 3 -->
@@ -142,6 +236,14 @@
     <style name="TextAppearance.OpenSans.Regular.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
         <item name="android:letterSpacing">0</item>
@@ -172,20 +274,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Headline 4 -->
@@ -200,6 +341,14 @@
     <style name="TextAppearance.OpenSans.Regular.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:letterSpacing">0</item>
@@ -230,20 +379,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Headline 5 -->
@@ -258,6 +446,14 @@
     <style name="TextAppearance.OpenSans.Regular.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:letterSpacing">0</item>
@@ -288,20 +484,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Headline 6 -->
@@ -316,6 +551,14 @@
     <style name="TextAppearance.OpenSans.Regular.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:letterSpacing">0</item>
@@ -346,20 +589,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Subtitle 1 -->
@@ -374,6 +656,14 @@
     <style name="TextAppearance.OpenSans.Regular.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="android:letterSpacing">0</item>
@@ -404,20 +694,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Subtitle 2 -->
@@ -432,6 +761,14 @@
     <style name="TextAppearance.OpenSans.Regular.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:letterSpacing">0</item>
@@ -462,20 +799,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Body 1 -->
@@ -490,6 +866,14 @@
     <style name="TextAppearance.OpenSans.Regular.Body1" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:letterSpacing">0</item>
@@ -520,20 +904,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Body 2 -->
@@ -542,12 +965,18 @@
         <item name="fontFamily">@font/open_sans_light</item>
     </style>
     <style name="TextAppearance.OpenSans.Light.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_lightitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Regular.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
         <item name="android:letterSpacing">0</item>
@@ -578,20 +1007,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Button -->
@@ -606,6 +1074,14 @@
     <style name="TextAppearance.OpenSans.Regular.Button" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:letterSpacing">0</item>
@@ -636,20 +1112,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Caption -->
@@ -665,6 +1180,14 @@
         <item name="android:letterSpacing">0</item>
         <item name="lineHeight">@dimen/screen_margin</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
         <item name="android:letterSpacing">0</item>
@@ -695,20 +1218,59 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
     </style>
 
     <!-- Overline -->
@@ -723,6 +1285,14 @@
     <style name="TextAppearance.OpenSans.Regular.Overline" parent="TextAppearance.MaterialComponents.Overline">
         <item name="android:letterSpacing">0</item>
         <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
     </style>
     <style name="TextAppearance.OpenSans.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
         <item name="android:letterSpacing">0</item>
@@ -753,20 +1323,226 @@
         <item name="fontFamily">@font/open_sans_extrabolditalic</item>
     </style>
 
-    <style name="TextAppearance.Raleway.Light.Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="fontFamily">@font/raleway_light</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_extralight</item>
     </style>
-    <style name="TextAppearance.Raleway.Regular.Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="fontFamily">@font/raleway_regular</item>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Medium.Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="fontFamily">@font/raleway_medium</item>
+    <style name="TextAppearance.Poppins.Light.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_light</item>
     </style>
-    <style name="TextAppearance.Raleway.SemiBold.Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="fontFamily">@font/raleway_semibold</item>
+    <style name="TextAppearance.Poppins.Light.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
     </style>
-    <style name="TextAppearance.Raleway.Bold.Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="fontFamily">@font/raleway_bold</item>
+    <style name="TextAppearance.Poppins.Thin.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
+    </style>
+
+    <!-- Tooltip -->
+    <style name="TextAppearance.OpenSans.Light.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Light.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_lightitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Regular.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Medium.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_italic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.SemiBold.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.Bold.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_bolditalic</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="TextAppearance.OpenSans.ExtraBold.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/open_sans_extrabolditalic</item>
+    </style>
+
+    <style name="TextAppearance.Poppins.Extra.Light.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_extralight</item>
+    </style>
+    <style name="TextAppearance.Poppins.Extra.Light.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_extralightitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Light.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+    <style name="TextAppearance.Poppins.Light.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_lightitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_thin</item>
+    </style>
+    <style name="TextAppearance.Poppins.Thin.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_thinitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Regular.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.Poppins.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_italic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.Poppins.Medium.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_mediumitalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.Poppins.SemiBold.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_semibolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="TextAppearance.Poppins.Bold.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_extrabold</item>
+    </style>
+    <style name="TextAppearance.Poppins.ExtraBold.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_extrabolditalic</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_black</item>
+    </style>
+    <style name="TextAppearance.Poppins.Black.Italic.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="fontFamily">@font/poppins_blackitalic</item>
+    </style>
+
+
+    <!--Form-->
+    <style name="TextInputLayout.User.Form.Filled.Dense" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeColor">@color/color_text_input_stroke</item>
+        <item name="boxStrokeWidth">@dimen/input_layout_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/focused_input_layout_stroke_width</item>
+        <item name="errorTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="hintTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="placeholderTextAppearance">@style/TextAppearance.OpenSans.Regular.Body2</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+    </style>
+
+    <style name="TextInputLayout.User.Form.Filled.Dense.Dark" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeColor">@color/color_text_input_stroke_dark</item>
+        <item name="boxStrokeWidth">@dimen/input_layout_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/focused_input_layout_stroke_width</item>
+        <item name="errorTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="hintTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="placeholderTextAppearance">@style/TextAppearance.OpenSans.Regular.Body2</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+    </style>
+
+    <style name="TextInputLayout.User.Form.Dropdown.Filled.Dense" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/color_text_input_stroke</item>
+        <item name="boxStrokeWidth">@dimen/input_layout_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/focused_input_layout_stroke_width</item>
+        <item name="errorTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="hintTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="placeholderTextAppearance">@style/TextAppearance.OpenSans.Regular.Body2</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+    </style>
+
+    <style name="TextInputLayout.Voucher.Form.Filled.Dense" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeColor">@color/color_text_input_stroke_2</item>
+        <item name="boxStrokeWidth">@dimen/input_layout_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/focused_input_layout_stroke_width</item>
+        <item name="errorTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="hintTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="placeholderTextAppearance">@style/TextAppearance.OpenSans.Regular.Body2</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+    </style>
+
+    <style name="TextInputLayout.Login.Form.Outlined.Dense" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/mercury</item>
+        <item name="boxStrokeWidth">@dimen/input_layout_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/input_layout_stroke_width</item>
+        <item name="errorTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="hintTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+        <item name="placeholderTextAppearance">@style/TextAppearance.OpenSans.Regular.Body2</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.OpenSans.Regular.Caption</item>
+    </style>
+
+    <style name="ShapeAppearance.MaterialComponents.SemiMediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">@dimen/semi_normal_shape_radius</item>
+    </style>
+
+    <style name="ShapeAppearance.MaterialComponents.MediumComponent.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">@dimen/medium_margin</item>
     </style>
 
 </resources>

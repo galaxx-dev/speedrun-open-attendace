@@ -19,6 +19,7 @@ import com.arysugiarto.attendence.viewmodel.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
+//class LoginFragment : Fragment(R.layout.fragment_login) {
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private val binding by viewBinding<FragmentLoginBinding>()
@@ -37,7 +38,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     }
 
-    private fun initViewModel(){
+    private fun initViewModel() {
         viewModel.requestLogin(
             binding.etUsername.text.toString(),
             binding.etPassword.text.toString(),
@@ -47,7 +48,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         )
     }
 
-    private fun initCallback(){
+    private fun initCallback() {
 
     }
 
@@ -113,6 +114,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         binding.apply {
             btnLogin.setOnClickListener(onClickCallback)
             btnLogin.setOnClickListener(onClickCallback)
+            tvRegister.setOnClickListener(onClickCallback)
         }
     }
 
@@ -135,14 +137,22 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 activity.hideKeyboard(view)
             }
 
+
         }
+        when (view) {
+            binding.tvRegister -> {
+                navController.navigateOrNull(
+                    LoginFragmentDirections.actionLoginFragmentToRegisterFragment()
+                )
+            }
+        }
+
     }
 
     companion object {
         const val COLOR_WHITE_RES = R.color.white
         const val LOGIN_STRING_RES = R.string.login_login
     }
-
 
 
 }
