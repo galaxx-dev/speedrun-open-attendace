@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import cn.pedant.SweetAlert.SweetAlertDialog
@@ -11,6 +12,8 @@ import com.arysugiarto.attendence.R
 import com.arysugiarto.attendence.data.remote.Result
 import com.arysugiarto.attendence.databinding.FragmentHomeBinding
 import com.arysugiarto.attendence.ui.home.adapter.HomeAdapter
+import com.arysugiarto.attendence.ui.main.MainFragment.Companion.parentBottomAppBar
+//import com.arysugiarto.attendence.ui.main.MainFragment.Companion.parentBottomAppBar
 import com.arysugiarto.attendence.ui.main.MainFragment.Companion.parentNavigation
 import com.arysugiarto.attendence.util.*
 import com.arysugiarto.attendence.viewmodel.HomeViewModel
@@ -33,6 +36,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         initCallback()
         initTypeAbsen()
         initViewModelCallback()
+        parentBottomAppBar?.isVisible = false
+        parentNavigation?.isVisible = false
 
 
     }
