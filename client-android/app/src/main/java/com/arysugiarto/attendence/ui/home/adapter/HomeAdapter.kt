@@ -1,9 +1,8 @@
 package com.arysugiarto.attendence.ui.home.adapter
-
-import com.arysugiarto.attendence.base.BaseAdapter
 import com.arysugiarto.attendence.data.remote.model.EmployeResponse
 import com.arysugiarto.attendence.databinding.ItemEmployeBinding
 import com.arysugiarto.attendence.util.textOrNull
+import com.arysugiarto.newsapp.base.BaseAdapter
 
 
 object HomeAdapter {
@@ -17,6 +16,9 @@ object HomeAdapter {
                         tvNameEmploye.textOrNull = item.fullname
 
                         ivEdit.setOnClickListener {
+                            SetEditOnClickItem.onEditClickListener.invoke(item)
+                        }
+                        clItem.setOnClickListener {
                             SetOnClickItem.onClickListener.invoke(item)
                         }
                         ivDelete.setOnClickListener {
@@ -37,6 +39,15 @@ object HomeAdapter {
 
         fun setOnClickItemListener(listener: (EmployeResponse.Payload) -> Unit) {
             onClickListener = listener
+        }
+
+    }
+
+    object SetEditOnClickItem {
+        var onEditClickListener: (EmployeResponse.Payload) -> Unit = { _ -> }
+
+        fun setEditOnClickItemListener(listener: (EmployeResponse.Payload) -> Unit) {
+            onEditClickListener = listener
         }
 
     }

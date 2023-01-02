@@ -14,7 +14,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@Module(includes = [DatabaseModule::class])
+@Module
 @InstallIn(SingletonComponent::class)
 object ApplicationModule {
 

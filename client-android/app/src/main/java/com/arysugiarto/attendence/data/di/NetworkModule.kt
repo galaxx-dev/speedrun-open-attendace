@@ -30,10 +30,10 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    const val DOKUTEST_ACCESS_KEY = "dokutest"
+    const val ATTENDENCE_ACCESS_KEY = "attendence"
 
     @Provides
-    @Named(DOKUTEST_ACCESS_KEY)
+    @Named(ATTENDENCE_ACCESS_KEY)
     fun provideBaseURL() = BuildConfig.BASE_URL
 
     @Provides
@@ -94,7 +94,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(
         okHttpClient: OkHttpClient,
-        @Named(DOKUTEST_ACCESS_KEY) baseURL: String
+        @Named(ATTENDENCE_ACCESS_KEY) baseURL: String
     ): Retrofit = Retrofit.Builder()
         .baseUrl(baseURL)
         .addConverterFactory(GsonConverterFactory.create())

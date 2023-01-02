@@ -4,11 +4,10 @@ import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.arysugiarto.attendence.base.BaseViewModel
+import com.arysugiarto.attendence.util.BaseViewModel
 import com.arysugiarto.attendence.data.remote.Result
 import com.arysugiarto.attendence.data.remote.model.LoginResponse
 import com.arysugiarto.attendence.data.remote.model.RegisterModel
-import com.arysugiarto.attendence.data.remote.model.SurveySend
 import com.arysugiarto.attendence.data.repositories.HomeRepository
 import com.arysugiarto.attendence.util.getRandomCharacters
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -28,20 +27,17 @@ class AuthViewModel @Inject constructor(
 
     private var _token: MutableLiveData<String> = MutableLiveData()
     val token: LiveData<String> get() = _token
-    private var _login: MutableLiveData<com.arysugiarto.attendence.data.remote.Result<LoginResponse>> = MutableLiveData()
-    val login: LiveData<com.arysugiarto.attendence.data.remote.Result<LoginResponse>> get() = _login
-    private var _isUserLoggedOff: MutableLiveData<com.arysugiarto.attendence.data.remote.Result<Any>> = MutableLiveData()
-    val isUserLoggedOff: LiveData<com.arysugiarto.attendence.data.remote.Result<Any>> get() = _isUserLoggedOff
+    private var _login: MutableLiveData<Result<LoginResponse>> = MutableLiveData()
+    val login: LiveData<Result<LoginResponse>> get() = _login
+    private var _isUserLoggedOff: MutableLiveData<Result<Any>> = MutableLiveData()
+    val isUserLoggedOff: LiveData<Result<Any>> get() = _isUserLoggedOff
 
-    fun getUserAccessToken() = accessManager.access.onEach {
-        _token.value = it.toString()
-    }.launchIn(viewModelScope)
+
 
     fun requestLogin(
         employeid: String,
         password: String,
-        sessionId: String
-    ) = repository.requestLogin(employeid, password, sessionId)
+    ) = repository.requestLogin(employeid, password)
         .onEach { result ->
             _login.value = result
 

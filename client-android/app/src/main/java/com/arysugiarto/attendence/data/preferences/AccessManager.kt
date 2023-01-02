@@ -88,33 +88,6 @@ class AccessManager(private val context: Context) {
             preferences[PreferencesKey.sessionIdKey] ?: emptyString
         }
 
-    suspend fun setLastSeenProductSaved(save : Boolean) {
-        context.dataStore.edit { preferences ->
-            preferences[PreferencesKey.saveLastSeenProductKey] = save
-        }
-    }
-
-    val isLastSeenProductSaved: Flow<Boolean> = context.dataStore.data
-        .catch { throwable ->
-            emit(emptyPreferences())
-            Timber.e(throwable)
-        }.map { preferences ->
-            preferences[PreferencesKey.saveLastSeenProductKey] ?: true
-        }
-
-    suspend fun setFirstInstall(firstInstall: Boolean) {
-        context.dataStore.edit { preferences ->
-            preferences[PreferencesKey.firstInstallKey] = firstInstall
-        }
-    }
-
-    val isAppFirstInstall: Flow<Boolean> = context.dataStore.data
-        .catch { throwable ->
-            emit(emptyPreferences())
-            Timber.e(throwable)
-        }.map { preferences ->
-            preferences[PreferencesKey.firstInstallKey] ?: false
-        }
 
     companion object {
         private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -125,13 +98,9 @@ class AccessManager(private val context: Context) {
     private object PreferencesKey {
         const val AUTH_PREFERENCES_KEY = "auth_preferences"
         const val TOKEN_ACCESS_REF = "token_access_key"
-        const val SAVE_LASTSEEN_PRODUCT_REF = "save_lastseen_product_key"
-        const val FIRST_INSTALL_PRODUCT_REF = "first_install_key"
         const val SESSION_ID_REF = "session_id_reference_key"
 
         val accessKey = stringPreferencesKey(TOKEN_ACCESS_REF)
         val sessionIdKey = stringPreferencesKey(SESSION_ID_REF)
-        val saveLastSeenProductKey = booleanPreferencesKey(SAVE_LASTSEEN_PRODUCT_REF)
-        val firstInstallKey = booleanPreferencesKey(FIRST_INSTALL_PRODUCT_REF)
     }
 }

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clPict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero_margin"
+                            android:background="@color/blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ivUser"
+                            android:layout_width="@dimen/_64sdp"
+                            android:layout_height="@dimen/_64sdp"
+                            android:layout_marginTop="@dimen/large_margin"
+                            android:background="@color/dove_gray"
+                            android:src="@drawable/ic_baseline_account_circle"
+                            app:layout_constraintDimensionRatio="3:3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/glProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+                        <ImageView
+                            android:id="@+id/ivChangePict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="@id/ivUser"
+                            app:layout_constraintStart_toEndOf="@id/glProfile"
+                            app:layout_constraintTop_toTopOf="@id/ivUser" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/screen_margin"
+                            android:text="Babyshop name"
+                            android:textAppearance="@style/TextAppearance.Poppins.Bold.Body1"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ivUser" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvEmployeeId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/large_margin"
+                            android:text="username"
+                            android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body1"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/screen_margin"
+                        android:layout_marginTop="@dimen/large_margin"
+                        android:text="@string/data_diri"
+                        android:textAppearance="@style/TextAppearance.Poppins.Medium.Body1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clPict" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/screen_margin"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/screen_margin"
+                        android:text="Ini adalah deskripsi"
+                        android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                        app:layout_constraintTop_toBottomOf="@+id/tvData" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="@dimen/screen_margin"
+                        android:layout_marginStart="@dimen/screen_margin"
+                        android:text="Ini adalah deskripsi"
+                        android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="@dimen/screen_margin"
+                        android:layout_marginStart="@dimen/screen_margin"
+                        android:text="Ini adalah deskripsi"
+                        android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="@dimen/screen_margin"
+                        android:layout_marginBottom="@dimen/screen_margin"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/screen_margin"
+                        android:text="Ini adalah deskripsi"
+                        android:textAppearance="@style/TextAppearance.OpenSans.Regular.Body2"
+                        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

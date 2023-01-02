@@ -42,9 +42,6 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         viewModel.requestLogin(
             binding.etEmployeeId.text.toString(),
             binding.etPassword.text.toString(),
-//            "10117124",
-//            "admin",
-            getSessionId()
         )
     }
 

@@ -1,7 +1,6 @@
 package com.arysugiarto.attendence.data.repositories
 
 import com.arysugiarto.attendence.data.remote.model.RegisterModel
-import com.arysugiarto.attendence.data.remote.model.SurveySend
 import com.arysugiarto.attendence.data.remote.model.UpdateModel
 import com.arysugiarto.attendence.data.source.callback.HomeSourceCallback
 import com.arysugiarto.attendence.data.source.data.HomeRemoteDataSource
@@ -16,8 +15,8 @@ class HomeRepository(
         remoteDataSource.registerEmployeeDataSource(registerModel)
 
 
-    override fun requestLogin(employeId: String, password: String, sessionId: String) =
-        remoteDataSource.requestLogin(employeId, password, sessionId)
+    override fun requestLogin(employeId: String, password: String) =
+        remoteDataSource.requestLogin(employeId, password)
 
     override fun requestEmployees() = remoteDataSource.requestEmployeeDataSource()
 

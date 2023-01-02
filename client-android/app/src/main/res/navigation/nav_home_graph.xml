@@ -15,6 +15,59 @@
         <action
             android:id="@+id/action_home_fragment_to_edit_fragment"
             app:destination="@id/edit_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_detail_fragment"
+            app:destination="@id/detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.arysugiarto.attendence.ui.detail.DetailFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_detail" >
+
+
+        <action
+            android:id="@+id/action_home_fragment_to_edit_fragment"
+            app:destination="@id/edit_fragment" />
+
+        <argument
+            android:name="id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="name"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="email"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="phone"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="gender"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="address"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+
     </fragment>
 
     <fragment

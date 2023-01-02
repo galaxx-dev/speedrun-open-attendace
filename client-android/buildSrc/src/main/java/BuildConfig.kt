@@ -1,6 +1,6 @@
 object Build {
     const val jvmTarget = "11"
-    const val applicationId = "com.arysugiarto.dokutest"
+    const val applicationId = "com.arysugiarto.attendence"
 
     const val resAppName = "app_name"
     const val apkExtension = ".apk"
@@ -42,7 +42,7 @@ object BuildType {
         const val resBaseUrl = "newsapi.org"
 
         const val appNameKey = "app_name"
-        const val appName = "Doku Test"
+        const val appName = "Open Attendence"
     }
 
 }

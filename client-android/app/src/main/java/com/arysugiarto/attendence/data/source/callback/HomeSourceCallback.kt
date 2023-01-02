@@ -10,8 +10,7 @@ interface HomeSourceCallback {
 
     fun requestLogin(
         employeId: String,
-        password: String,
-        sessionId: String
+        password: String
     ): Flow<Result<LoginResponse>>
 
     fun requestEmployees(

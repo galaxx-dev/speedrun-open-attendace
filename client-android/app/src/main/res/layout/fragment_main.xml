@@ -7,16 +7,6 @@
     android:orientation="vertical"
     tools:context=".ui.main.MainFragment">
 
-<!--    <com.google.android.material.appbar.MaterialToolbar-->
-<!--        android:id="@+id/mainToolbar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:background="@color/red"-->
-<!--        android:elevation="@dimen/small_margin"-->
-<!--        app:titleTextAppearance="@style/ToolbarStyle"-->
-<!--        app:contentInsetStartWithNavigation="0dp"-->
-<!--        tools:title="Doku Berita"/>-->
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/navHostContainer"
         android:layout_width="match_parent"

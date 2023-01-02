@@ -44,6 +44,7 @@ class UpdateFragment : Fragment(R.layout.fragment_edit) {
         initOnClick()
         initViewModelCallback()
         initData()
+        initSpinnerGender()
 
     }
 
@@ -110,6 +111,7 @@ class UpdateFragment : Fragment(R.layout.fragment_edit) {
             etNameEmployee.textOrNull  = args.name
             etEmail.textOrNull = args.email
             etPhone.textOrNull = args.phone
+            gender = args.gender.toString()
             etAddress.textOrNull = args.address
 
         }

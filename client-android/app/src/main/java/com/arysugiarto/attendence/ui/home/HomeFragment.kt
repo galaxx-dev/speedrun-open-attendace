@@ -122,13 +122,28 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private fun initClickAdapter() {
         HomeAdapter.SetOnClickItem.setOnClickItemListener { item ->
             navController.navigateOrNull(
-                HomeFragmentDirections.actionHomeFragmentToEditFragment(
+                HomeFragmentDirections.actionHomeFragmentToDetailFragment(
                     item.id,
                     item.fullname,
                     item.email,
                     item.phone,
                     item.gender,
                     item.address
+
+
+                )
+            )
+        }
+        HomeAdapter.SetEditOnClickItem.setEditOnClickItemListener { item ->
+            navController.navigateOrNull(
+                HomeFragmentDirections.actionHomeFragmentToEditFragment(
+                    item.id,
+                    item.fullname,
+                    item.email,
+                    item.phone,
+                    item.address,
+                    item.gender
+
                 )
             )
         }

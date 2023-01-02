@@ -9,6 +9,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
+import cn.pedant.SweetAlert.SweetAlertDialog
 import com.arysugiarto.attendence.R
 import com.arysugiarto.attendence.data.remote.Result
 import com.arysugiarto.attendence.data.remote.model.RegisterModel
@@ -53,6 +54,16 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                 is Result.Loading -> {}
                 is Result.Success -> {
                     Timber.e("Berhasil")
+                    SweetAlertDialog(requireContext(), SweetAlertDialog.SUCCESS_TYPE)
+                        .setTitleText(context?.getString(R.string.success))
+                        .setContentText(context?.getString(R.string.edit_employee))
+                        .setConfirmClickListener {
+                            it.dismissWithAnimation()
+                            navController.navigateOrNull(
+                                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+                            )
+                        }
+                        .show()
                 }
                 is Result.Error -> {
 
@@ -93,7 +104,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
     private fun initOnClick() {
         binding.apply {
             btnRegister.setOnClickListener(onClickCallback)
-            tvRegister.setOnClickListener(onClickCallback)
+            tvToLogin.setOnClickListener(onClickCallback)
         }
     }
 
@@ -118,7 +129,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                 }
 
             }
-            binding.tvRegister ->{
+            binding.tvToLogin ->{
                 navController.navigateOrNull(
                     RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
                 )
@@ -126,11 +137,5 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         }
 
     }
-
-    companion object {
-        const val COLOR_WHITE_RES = R.color.white
-        const val LOGIN_STRING_RES = R.string.login_login
-    }
-
 
 }
