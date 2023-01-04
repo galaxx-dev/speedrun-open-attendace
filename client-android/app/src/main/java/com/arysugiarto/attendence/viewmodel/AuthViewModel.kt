@@ -29,9 +29,6 @@ class AuthViewModel @Inject constructor(
     val token: LiveData<String> get() = _token
     private var _login: MutableLiveData<Result<LoginResponse>> = MutableLiveData()
     val login: LiveData<Result<LoginResponse>> get() = _login
-    private var _isUserLoggedOff: MutableLiveData<Result<Any>> = MutableLiveData()
-    val isUserLoggedOff: LiveData<Result<Any>> get() = _isUserLoggedOff
-
 
 
     fun requestLogin(
@@ -49,11 +46,6 @@ class AuthViewModel @Inject constructor(
             }
         }.launchIn(viewModelScope)
 
-    suspend fun setSessionId() {
-        35.getRandomCharacters.let { sessionId ->
-            accessManager.setSessionId(sessionId)
-        }
-    }
 
 
     fun requestRegister(registerModel: RegisterModel) =

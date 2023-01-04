@@ -40,6 +40,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         initOnClick()
         initViewModelCallback()
         initSpinnerGender()
+        onInputTextChanged()
 
     }
 
@@ -56,7 +57,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                     Timber.e("Berhasil")
                     SweetAlertDialog(requireContext(), SweetAlertDialog.SUCCESS_TYPE)
                         .setTitleText(context?.getString(R.string.success))
-                        .setContentText(context?.getString(R.string.edit_employee))
+                        .setContentText(context?.getString(R.string.register_employee))
                         .setConfirmClickListener {
                             it.dismissWithAnimation()
                             navController.navigateOrNull(
@@ -101,6 +102,24 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
     }
 
 
+    private fun onInputTextChanged() {
+        binding.boxEmployeId.editText?.addTextChangedListener {
+            binding.boxEmployeId.error = null
+        }
+        binding.boxNameEmployee.editText?.addTextChangedListener {
+            binding.boxNameEmployee.error = null
+        }
+        binding.boxPhone.editText?.addTextChangedListener {
+            binding.boxPhone.error = null
+        }
+        binding.boxEmail.editText?.addTextChangedListener {
+            binding.boxEmail.error = null
+        }
+        binding.boxPassword.editText?.addTextChangedListener {
+            binding.boxPassword.error = null
+        }
+    }
+
     private fun initOnClick() {
         binding.apply {
             btnRegister.setOnClickListener(onClickCallback)
@@ -110,6 +129,27 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
 
     private val onClickCallback = View.OnClickListener { view ->
+        when {
+            binding.boxEmployeId.textIsEmpty() -> binding.boxEmployeId.warn(
+                context?.getString(R.string.register_employeid_hint)
+            )
+            binding.boxNameEmployee.textIsEmpty() -> binding.boxNameEmployee.warn(
+                context?.getString(R.string.register_name_hint)
+            )
+            binding.boxPhone.textIsEmpty() -> binding.boxPhone.warn(
+                context?.getString(R.string.register_phone_hint)
+            )
+            binding.boxEmail.textIsEmpty() -> binding.boxEmail.warn(
+                context?.getString(R.string.register_email_hint)
+            )
+            binding.boxPassword.textIsEmpty() -> binding.boxPassword.warn(
+                context?.getString(R.string.login_password_hint)
+            )
+            else -> {
+                activity.hideKeyboard(view)
+            }
+
+        }
         when (view) {
             binding.btnRegister -> {
                 binding.apply {

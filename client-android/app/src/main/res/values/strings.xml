@@ -41,10 +41,14 @@
     <string name="delete_employee_sure">Anda yakin ingin menghapus karyawan?</string>
     <string name="success">Berhasil</string>
     <string name="edit_employee">Berhasil edit karyawan</string>
+    <string name="register_employee">Berhasil daftar karyawan</string>
     <string name="onboarding_title_temp">Hello</string>
     <string name="onboarding_description_temp">Deskripsinya</string>
     <string name="onboarding_skip">Lewati</string>
     <string name="profile_decription">Description</string>
     <string name="data_diri">Data diri</string>
+    <string name="register_phone_hint">Masukan nomer telepon</string>
+    <string name="register_employeid_hint">Masukan id karyawan</string>
+    <string name="register_email_hint">masukan email</string>
 
 </resources>

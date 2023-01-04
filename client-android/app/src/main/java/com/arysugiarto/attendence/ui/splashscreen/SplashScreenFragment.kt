@@ -48,11 +48,11 @@ class SplashScreenFragment: Fragment(R.layout.fragment_splashscreen) {
         }
     }
 
-    private suspend fun initSessionId(
-        hadToInsertSessionId: Boolean
-    ) {
-        if (hadToInsertSessionId) viewModel.setSessionId()
-    }
+//    private suspend fun initSessionId(
+//        hadToInsertSessionId: Boolean
+//    ) {
+//        if (hadToInsertSessionId) viewModel.setSessionId()
+//    }
 
     override fun onDestroy() {
         super.onDestroy()
