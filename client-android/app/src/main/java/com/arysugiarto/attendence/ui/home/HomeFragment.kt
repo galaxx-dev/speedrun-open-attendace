@@ -12,6 +12,7 @@ import com.arysugiarto.attendence.R
 import com.arysugiarto.attendence.data.remote.Result
 import com.arysugiarto.attendence.databinding.FragmentHomeBinding
 import com.arysugiarto.attendence.ui.home.adapter.HomeAdapter
+import com.arysugiarto.attendence.ui.login.LoginFragmentDirections
 import com.arysugiarto.attendence.ui.main.MainFragment.Companion.parentBottomAppBar
 //import com.arysugiarto.attendence.ui.main.MainFragment.Companion.parentBottomAppBar
 import com.arysugiarto.attendence.ui.main.MainFragment.Companion.parentNavigation
@@ -36,6 +37,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         initCallback()
         initTypeAbsen()
         initViewModelCallback()
+        initOnClick()
         parentBottomAppBar?.isVisible = false
         parentNavigation?.isVisible = false
 
@@ -163,5 +165,25 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 .show()
         }
     }
+
+    private fun initOnClick() {
+        binding.apply {
+            btnAdd.setOnClickListener(onClickCallback)
+        }
+    }
+
+
+
+    private val onClickCallback = View.OnClickListener { view ->
+        when (view) {
+            binding.btnAdd -> {
+                navController.navigateOrNull(
+                    HomeFragmentDirections.actionHomeFragmentToRegisterFragment()
+                )
+            }
+        }
+
+    }
+
 
 }

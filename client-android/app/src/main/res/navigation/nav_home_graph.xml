@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_home_fragment_to_detail_fragment"
             app:destination="@id/detail_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_register_fragment"
+            app:destination="@id/register_fragment" />
     </fragment>
 
     <fragment
@@ -111,6 +114,16 @@
             app:argType="string"
             app:nullable="true" />
 
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.arysugiarto.attendence.ui.register.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_register_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
     </fragment>
 
 </navigation>

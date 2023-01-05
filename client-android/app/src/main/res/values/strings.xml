@@ -50,5 +50,6 @@
     <string name="register_phone_hint">Masukan nomer telepon</string>
     <string name="register_employeid_hint">Masukan id karyawan</string>
     <string name="register_email_hint">masukan email</string>
+    <string name="add_admin">Daftarkan Admin</string>
 
 </resources>

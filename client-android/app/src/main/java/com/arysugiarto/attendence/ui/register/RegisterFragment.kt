@@ -1,6 +1,5 @@
 package com.arysugiarto.attendence.ui.register
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -8,19 +7,12 @@ import android.widget.ArrayAdapter
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import cn.pedant.SweetAlert.SweetAlertDialog
 import com.arysugiarto.attendence.R
 import com.arysugiarto.attendence.data.remote.Result
 import com.arysugiarto.attendence.data.remote.model.RegisterModel
-import com.arysugiarto.attendence.databinding.FragmentHomeBinding
-import com.arysugiarto.attendence.databinding.FragmentLoginBinding
 import com.arysugiarto.attendence.databinding.FragmentRegisterBinding
-import com.arysugiarto.attendence.ui.login.LoginFragment
 import com.arysugiarto.attendence.util.*
-import com.arysugiarto.attendence.util.animatedtext.attachTextChangeAnimator
-import com.arysugiarto.attendence.util.animatedtext.bindProgressButton
-import com.arysugiarto.attendence.viewmodel.AuthViewModel
 import com.arysugiarto.attendence.viewmodel.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -29,7 +21,7 @@ import timber.log.Timber
 class RegisterFragment : Fragment(R.layout.fragment_register) {
 
     private val binding by viewBinding<FragmentRegisterBinding>()
-    private val viewModel by viewModels<AuthViewModel>()
+    private val viewModel by viewModels<HomeViewModel>()
 
     var gender = emptyString
 
@@ -61,7 +53,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                         .setConfirmClickListener {
                             it.dismissWithAnimation()
                             navController.navigateOrNull(
-                                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+                                RegisterFragmentDirections.actionRegisterFragmentToHomeFragment()
                             )
                         }
                         .show()
@@ -123,7 +115,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
     private fun initOnClick() {
         binding.apply {
             btnRegister.setOnClickListener(onClickCallback)
-            tvToLogin.setOnClickListener(onClickCallback)
+//            tvToLogin.setOnClickListener(onClickCallback)
         }
     }
 
@@ -169,11 +161,11 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                 }
 
             }
-            binding.tvToLogin ->{
-                navController.navigateOrNull(
-                    RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
-                )
-            }
+//            binding.tvToLogin ->{
+//                navController.navigateOrNull(
+//                    RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+//                )
+//            }
         }
 
     }

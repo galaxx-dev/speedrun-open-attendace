@@ -21,6 +21,9 @@ class HomeViewModel @Inject constructor(
     private val repository = homeRepository
 
 
+    private var _register: MutableLiveData<Result<RegisterModel>> = MutableLiveData()
+    val register: LiveData<Result<RegisterModel>> get() = _register
+
     private var _employee: MutableLiveData<Result<EmployeResponse>> = MutableLiveData()
     val employee: LiveData<Result<EmployeResponse>> get() = _employee
     private var _update: MutableLiveData<Result<UpdateModel>> = MutableLiveData()
@@ -48,6 +51,13 @@ class HomeViewModel @Inject constructor(
             .onEach { result ->
                 _delete.value = result
             }.launchIn(viewModelScope)
+
+    fun requestRegister(registerModel: RegisterModel) =
+        repository.register (registerModel).onEach { result ->
+            _register.value = result
+        }.launchIn(viewModelScope)
+
+
 
 
 }

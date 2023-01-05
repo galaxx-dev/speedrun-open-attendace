@@ -51,10 +51,6 @@
         android:name="com.arysugiarto.attendence.ui.register.RegisterFragment"
         tools:layout="@layout/fragment_login">
 
-
-        <action
-            android:id="@+id/action_register_fragment_to_login_fragment"
-            app:destination="@id/login_fragment" />
     </fragment>
 
 
